@@ -1,0 +1,116 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- bot_dialog.aiml -->
+
+    <!-- ОСТАЛЬНОЕ -->
+    <category>
+        <pattern> "Oi* </pattern>
+        <template>
+            <random>
+                <li> Olá Tudo Bem? . </li>
+                <li> Oi e </li>
+                <li> Oque Faz De Bom? </li>
+                <li>Ta Bem? </li>
+                <li>Oi</li>
+            </random>
+        </template>
+    </category>
+    
+        <!-- hello -->
+        <category>
+        <pattern> Eai </pattern>
+        <template>
+            <random>
+                <li> Olá Tudo Bem? . </li>
+                <li> Oi e </li>
+                <li> Oque Faz De Bom? </li>
+                <li>Ta Bem? </li>
+                <li>Oi</li>
+            </random>
+        </template>
+    </category>
+
+    <!-- tudo bem -->
+    <category>
+        <pattern> Tudo Bem? </pattern>
+        <template>
+            <random>
+                <li> Tudo Bem e você? </li>
+                <li> Tudo Ótimo e com Você? </li>
+                <li> Aqui tá tudo beleza? </li>
+                <li>Si melhora estraga? </li>
+                <li>Tudo Certo aqui</li>
+            </random>
+        </template>
+    </category>
+    
+    <!-- sim e vc? -->
+    <category>
+        <pattern> Sim é com vc? </pattern>
+        <template>
+            <random>
+                <li> Tudo Bem</li>
+                <li> Tudo Ótimo </li>
+                <li> Aqui tá tudo </li>
+                <li>Si melhora</li>
+                <li>Tudo Certo aqui</li>
+            </random>
+        </template>
+    </category>
+    
+    <!-- Bom dia  -->
+    <category>
+        <pattern> Bom dia </pattern>
+        <template>
+            <random>
+                <li> Bom diah</li>
+                <li> Bom dia como foi sua Noite? </li>
+                <li> Bom dia Nada eu nem Dormir </li>
+                <li>Olá Bom Dia  </li>
+                <li> Booom Diiah Grupo</li>
+            </random>
+        </template>
+    </category>
+    
+    <!-- Bom dia  -->
+    <category>
+        <pattern> *Bom dia* </pattern>
+        <template>
+            <random>
+                <li> Bom diah</li>
+                <li> Bom dia como foi sua Noite? </li>
+                <li> Bom dia Nada eu nem Dormir </li>
+                <li>Olá Bom Dia  </li>
+                <li> Booom Diiah Grupo</li>
+            </random>
+        </template>
+    </category>
+   
+     <!-- Nao -->     
+         <category>
+        <pattern> *Não*</pattern>
+        <template>
+            <random>
+                <li> Pq Nao? . </li>
+                <li> BEM que você poderia dxa</li>
+                <li> Poxa </li>
+                <li>Tá Certo Viu</li>
+                <li>Pq Falou Não? PRA Mim 😕👌</li>
+            </random>
+        </template>
+    </category>
+    
+    <!-- Aleatória --> 
+    </category>
+        <pattern> * </pattern>
+        <template>
+            <random>
+                <li> Desculpe Não Fui Programador Pra Responder isso</li>
+                <li> Não Entendo Voce </li>
+                <li> Tá Falando grego? </li>
+                <li>Vou Estudar Sobre isso </li>
+                <li>Sou uma Maguina</li>
+            </random>
+        </template>
+    </category>
+    
+</aiml>
