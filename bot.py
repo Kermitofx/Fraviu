@@ -41,7 +41,7 @@ def frase_command(m):
 @bot.message_handler(commands=['start'])
 def start(message):
     chat_id = message.chat.id
-    bot.reply_to(chat_id, "Oie\n\n Olha Meus Commands DisponÃ­veis :) âœŒ\n `/PaciÃªncia` = `*Medidor De PaciÃªncia* ðŸ˜‘ \n `/medo` = *Medidor de Medo* ðŸ˜¢ \n `/raiva` = *Medidor de Raiva* ðŸ˜ ")
+    bot.reply_to(m, "Oie\n\n Olha Meus Commands DisponÃ­veis :) âœŒ\n `/PaciÃªncia` = `*Medidor De PaciÃªncia* ðŸ˜‘ \n `/medo` = *Medidor de Medo* ðŸ˜¢ \n `/raiva` = *Medidor de Raiva* ðŸ˜ ")
   
 		
 		
