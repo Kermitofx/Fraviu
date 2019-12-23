@@ -37,7 +37,9 @@ def frase_command(m):
 		bot.reply_to(m, "Hoje Eu TÃ´ *{}%* De *{}* Hojeâœ¨".format(valor, resposta), parse_mode='Markdown')
 		
   	###start
- 
+@bot.message_handler(commands=['start', 'help'])
+def send_welcome(message):
+	bot.reply_to(message, "Howdy, how are you doing?")
 		
 		
   
