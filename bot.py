@@ -9,7 +9,6 @@ bot = telebot.TeleBot("833645402:AAE2k_0zF-VZhsb8D1tCBLWCLDnlZFrKnyk")
 
 @bot.message_handler(commands=["paciencia"])
 def paciencia(message):
-	if m.text == '/paciencia@SrKingBot ' or m.text == 'paciÃªncia' :
 		list = ["ðŸ˜‘ | PaciÃªncia" ]
 		valor = randint(0, 100)
 		resposta = choice(list)
@@ -20,7 +19,6 @@ def paciencia(message):
 	
 @bot.message_handler(commands=["medo"])
 def medo(message):
-	if m.text == '/medo' or m.text == '/medo@SrKingBot ' or m.text == 'medo' :
 		list = ["ðŸ˜• | Medo" ]
 		valor = randint(0, 100)
 		resposta = choice(list)
@@ -30,7 +28,6 @@ def medo(message):
 		##raiva
 @bot.message_handler(commands=["raiva"])
 def frase_command(message):
-	if m.text == '/raiva' or m.text == '/raiva@SrKingBot ' or m.text == 'raiva' :
 		list = ["ðŸ˜  | Raiva" ]
 		valor = randint(0, 100)
 		resposta = choice(list)
