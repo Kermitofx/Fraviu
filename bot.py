@@ -36,7 +36,7 @@ def frase_command(message):
   	###start
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-	bot.reply_to(message, "Oie ✌\n\n Olha Meus Commands Disponíveis :) \n /paciencia = *Medidor De Paciência* 💬\n /medo = *Medidor de Medo* 😕 \n /raiva = *Medidor de Raiva😠* ")
+	bot.reply_to(message, "Oie ✌\n\n Olha Meus Commands Disponíveis :) \n /paciencia = Medidor De Paciência💬\n /medo = Medidor de Medo😕 \n /raiva = Medidor de Raiva😠 ")
 		
 		
   
