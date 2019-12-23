@@ -17,7 +17,7 @@ def paciencia(m):
 		list = ["😑 | Paciência" ]
 		valor = randint(0, 100)
 		resposta = choice(list)
-		bot.reply_to(m, "Minha*{}* tá *{}*% Hoje✨".format(resposta, valor), parse_mode='Markdown')
+		bot.reply_to_message_id(m, "Minha*{}* tá *{}*% Hoje✨".format(resposta, valor), parse_mode='Markdown')
 		
 		
 		##Medo 
@@ -28,7 +28,7 @@ def medo(m):
 		list = ["😕 | Medo" ]
 		valor = randint(0, 100)
 		resposta = choice(list)
-		bot.reply_to(m, "eu to*{}%* de  *{}*Hoje✨".format(valor, resposta), parse_mode='Markdown')
+		bot.reply_to_message_id(m, "eu to*{}%* de  *{}*Hoje✨".format(valor, resposta), parse_mode='Markdown')
 		
 		
 		##raiva
@@ -38,14 +38,14 @@ def frase_command(m):
 		list = ["😠 | Raiva" ]
 		valor = randint(0, 100)
 		resposta = choice(list)
-		bot.reply_to(m, "Hoje Eu Tô *{}%* De *{}* Hoje✨".format(valor, resposta), parse_mode='Markdown')
+		bot.reply_to_message_id(m, "Hoje Eu Tô *{}%* De *{}* Hoje✨".format(valor, resposta), parse_mode='Markdown')
 		
   	###start
   
 @bot.message_handler(commands=['start'])
 def start(message):
     chat_id = message.chat.id
-    bot.reply_to(chat_id, "Oie\n\n Olha Meus Commands Disponíveis :) ✌\n `/Paciência` - `*Medidor De Paciência* 😑 \n `/medo` - *Medidor de Medo* 😢 \n `/raiva` - *Medidor de Raiva* 😠")
+    bot.reply_to_message_id(chat_id, "Oie\n\n Olha Meus Commands Disponíveis :) ✌\n `/Paciência` - `*Medidor De Paciência* 😑 \n `/medo` - *Medidor de Medo* 😢 \n `/raiva` - *Medidor de Raiva* 😠")
   
   
   ##resposta aiml
