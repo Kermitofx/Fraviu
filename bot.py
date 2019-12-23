@@ -45,7 +45,7 @@ def frase_command(m):
 @bot.message_handler(commands=['start'])
 def start(message):
     chat_id = message.chat.id
-    bot.reply_to(chat_id, "Oie\n\n Olha Meus Commands Disponíveis :) ✌\n `/Paciência` = `*Medidor De Paciência* 😑 \n `/medo` = *Medidor de Medo* 😢 \n `/raiva` = *Medidor de Raiva* 😠")
+    bot.reply_to(chat_id, "Oie\n\n Olha Meus Commands Disponíveis :) ✌\n `/Paciência` - `*Medidor De Paciência* 😑 \n `/medo` - *Medidor de Medo* 😢 \n `/raiva` - *Medidor de Raiva* 😠")
   
   
   ##resposta aiml
