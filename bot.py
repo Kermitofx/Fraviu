@@ -7,27 +7,7 @@ from telebot import types
 from random import randint, choice
 
 
-kernel = aiml.Kernel()
-kernel.bootstrap(learnFiles="startup.xml", commands="LOAD AIML BOT")
-
 bot = telebot.TeleBot("833645402:AAHEPKnaDVd2YpJWsgg14GI9JH-ydRoqh08")
-
-is_silenced = False
-
-
-@bot.message_handler(commands=["off"])
-def handle_start(m):
-    global is_silenced
-    is_silenced = True
-    bot.reply_to(m, "*Conversa em chat silênciada*:(\n\n _PORQUE VOCE FEZ ISSO? DXA EU CONVERSA COM MEUS AMIGOS_ /unoff")
-
-
-@bot.message_handler(commands=["unoff"])
-def handle_start(m):
-    global is_silenced
-    is_silenced = False
-    bot.reply_to(m, "Saúde! Eu posso conversar!")
-
 
 ###paciência 
 
@@ -69,19 +49,6 @@ def start(message):
   
   
   ##resposta aiml
-@bot.message_handler(func=lambda message: True, content_types=["text"])
-def response(m):
-    global is_silenced
-    if message.text == "silence_all" or message.text == "SILENCE_ALL":
-        is_silenced = True
-    if message.text == "unsilence_all" or message.text == "UNSILENCE_ALL":
-        is_silenced = False
-        return
-    if is_silenced:
-        return
-    response_text = kernel.respond(message.text, message.chat.id)
-    bot.reply_to(m, response_text)
-
 
 if __name__ == '__main__':
     bot.polling(none_stop=True)
