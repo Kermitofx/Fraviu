@@ -7,7 +7,7 @@ from random import randint, choice
 
 bot = telebot.TeleBot("833645402:AAE2k_0zF-VZhsb8D1tCBLWCLDnlZFrKnyk")
 
-@bot.message_handler(commands=["/paciencia"])
+@bot.message_handler(commands=["paciencia"])
 def paciencia(message):
 	if m.text == '/paciencia@SrKingBot ' or m.text == 'paciÃªncia' :
 		list = ["ðŸ˜‘ | PaciÃªncia" ]
@@ -18,7 +18,7 @@ def paciencia(message):
 		
 		##Medo 
 	
-@bot.message_handler(commands=["/medo"])
+@bot.message_handler(commands=["medo"])
 def medo(message):
 	if m.text == '/medo' or m.text == '/medo@SrKingBot ' or m.text == 'medo' :
 		list = ["ðŸ˜• | Medo" ]
@@ -28,7 +28,7 @@ def medo(message):
 		
 		
 		##raiva
-@bot.message_handler(commands=["/raiva"])
+@bot.message_handler(commands=["raiva"])
 def frase_command(message):
 	if m.text == '/raiva' or m.text == '/raiva@SrKingBot ' or m.text == 'raiva' :
 		list = ["ðŸ˜  | Raiva" ]
@@ -39,7 +39,7 @@ def frase_command(message):
   	###start
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-	bot.reply_to(message, "Howdy, how are you doing?")
+	bot.reply_to(message, "Oie\n\n Olha Meus Commands DisponÃ­veis :) âœŒ\n `/PaciÃªncia` = `*Medidor De PaciÃªncia* ðŸ˜‘ \n `/medo` = *Medidor de Medo* ðŸ˜¢ \n `/raiva` = *Medidor de Raiva* ðŸ˜ ")
 		
 		
   
