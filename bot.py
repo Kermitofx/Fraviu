@@ -7,7 +7,7 @@ from telebot import types
 from random import randint, choice
 
 
-bot = telebot.TeleBot("833645402:AAHEPKnaDVd2YpJWsgg14GI9JH-ydRoqh08")
+bot = telebot.TeleBot("833645402:AAE2k_0zF-VZhsb8D1tCBLWCLDnlZFrKnyk")
 
 ###paciência 
 
